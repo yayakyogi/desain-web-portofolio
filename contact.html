@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuliKode</title>
+    <link rel="icon" href="assets/icons/logoutama.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-brand">
+            <a href="index.html">KuliKode</a>
+            <button id="button">
+                <span></span>
+                <!-- <span class="span-b"></span> -->
+            </button>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="portofolio.html">My Projects</a></li>
+            <li><a href="contact.html">About me</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="contact">
+            <h1>CONTACT</h1>
+            <img src="assets/img/about-me.svg" alt="profile">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>Yayak Yogi Ginantaka</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>yayaktaka@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>No. Handphone</td>
+                    <td>082233863080</td>
+                </tr>
+            </table>
+            <button class="btn" onclick="showTanggapan()">Kirim tanggapan</button>
+        </div>
+    <div class="footer">
+        Made by <span>&hearts;</span> yayakyogi
+    </div>
+    <div class="Modal" id="tanggapan">
+        <form action="contact.html" method="GET" enctype="multipart/form-data">
+            <div class="form-modal">
+                <div class="form-header">
+                    Kritik & Saran
+                    <a href="#" id="form-close" onclick="hideTanggapan()">&times;</a>
+                </div>
+                <div class="form-body" style="text-align: left;">
+                    <label>Nama</label><br>
+                    <input type="text" name="nama" class="form-control" placeholder="Nama lengkap">
+                    <label>Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="Email">
+                    <label>Pesan</label>
+                    <textarea name="pesan" class="form-control" cols="5" rows="5" placeholder="Pesan anda..."></textarea>
+                </div>
+                <div class="form-footer">
+                    <input type="submit" class="btn-submit" value="Simpan">
+                        <input type="button" id="form-close" class="btn-close" onclick="hideTanggapan()" value="Batal">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="assets/script.js"></script>
+<script>
+    // // Dark mode
+    const button = document.getElementById("button");
+
+    const body = document.querySelector("body");
+    const span = document.querySelector(".navbar-brand button span");
+    const navbarBrand = document.querySelector(".navbar-brand a");
+    const navbar = document.querySelector('nav ul');
+    const darkContacth1 = document.querySelector('.contact h1');
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const darkHumberger = document.querySelectorAll('.menu-toggle span');
+    const darkTable = document.querySelectorAll('.contact table tr td');
+    const darkImg = document.querySelector('.contact img');
+
+    button.addEventListener("click", function(){
+        body.classList.toggle('darkBody');
+        span.classList.toggle('darkSpan');
+        navbarBrand.classList.toggle('darkNavbarBrand');
+        darkContacth1.classList.toggle('darkTable');
+        darkImg.classList.toggle('darkImg');
+        for(let i=0; i<darkTable.length; i++){
+            darkTable[i].classList.toggle('darkTable');
+        }
+        for(let i=0; i<darkHumberger.length; i++){
+            darkHumberger[i].classList.toggle("darkHumberger")
+        }
+    });
+
+     // Munculkan sidebar
+     menuToggle.addEventListener('click',function(){
+        navbar.classList.toggle('slide');
+    })
+
+    // Munculkan modal
+    const tanggapan = document.getElementById('tanggapan');
+
+    function showTanggapan(){
+        tanggapan.style.display="block";
+    }
+    function hideTanggapan(){
+        tanggapan.style.display="none";
+    }
+</script>
+</html>

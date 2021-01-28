@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KuliKode</title>
+    <link rel="icon" href="assets/icons/logoutama.png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-brand">
+            <a href="index.html">KuliKode</a>
+            <button id="button">
+                <span></span>
+                <!-- <span class="span-b"></span> -->
+            </button>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skill</a></li>
+            <li><a href="portofolio.html">Projects</a></li>
+            <li><a href="contact.html">About me</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="wrap">
+            <div class="wrap-content">
+                <h3>Hi, I'am Yayak Yogi Ginantaka</h3>
+                <h1>Think Twice, Code Once</h1>
+                <div class="line"></div>
+                <p>Seorang programmer yang tugasnya mebenahi coding teman-temannya :D. Belajar coding juga karena terpaksa tapi lama-lama jadi suka. Ini merupakan web pribadi saya yang berisi tentang skill dan beberapa project aplikasi yang sudah saya kerjakan</p>
+                <div class="link">
+                    <a href="contact.html">About me</a>
+                    <a href="https://www.instagram.com/yayak_yogi/">
+                        <img class="iconimg" src="assets/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.facebook.com/yayakyogi.ginantaka">
+                        <img class="iconimg" src="assets/icons/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=082233863080&text=Selamat%20malam">
+                        <img class="iconimg" src="assets/icons/whatsapp.svg" alt="whatsapp">
+                    </a>
+                    <a href="https://github.com/yayakyogi">
+                        <img class="iconimg" src="assets/icons/github.svg" alt="github">
+                    </a>
+                </div>
+                <a class="cv" href="#">Get my CV</a>
+            </div>
+            <img src="assets/img/coding.svg" alt="coding" class="img">
+        </div>
+    </div>
+    <div class="footer">
+        Made by <span>&hearts;</span> yayakyogi
+    </div>
+</body>
+<script src="assets/script.js"></script>
+<script>
+    // Dark mode
+    const button = document.getElementById("button");
+
+    const body = document.querySelector("body");
+    const span = document.querySelector(".navbar-brand button span");
+    const navbarBrand = document.querySelector(".navbar-brand a");
+    const wrapH3 = document.querySelector(".wrap-content h3");
+    const wrapH1 = document.querySelector(".wrap-content h1");
+    const line = document.querySelector(".wrap-content .line");
+    const wrapP = document.querySelector(".wrap-content p");
+    const darkFooter = document.querySelector(".footer");
+    const menuToggle = document.querySelector('.menu-toggle input');
+    const navbar = document.querySelector('nav ul');
+    const darkHumberger = document.querySelectorAll('.menu-toggle span');
+
+    button.addEventListener("click", function(){
+        body.classList.toggle('darkBody');
+        span.classList.toggle('darkSpan');
+        navbarBrand.classList.toggle('darkNavbarBrand');
+        wrapH3.classList.toggle('darkWrapH3');
+        wrapH1.classList.toggle('darkWrapH1');
+        line.classList.toggle('darkLine');
+        wrapP.classList.toggle('darkWrapP');
+        darkFooter.classList.toggle("darkFooter");
+        for(let i=0; i<darkHumberger.length; i++){
+            darkHumberger[i].classList.toggle("darkHumberger")
+        }
+    });
+    // Munculkan sidebar
+
+    menuToggle.addEventListener('click',function(){
+        navbar.classList.toggle('slide');
+    });
+</script>
+</html>
