@@ -452,7 +452,6 @@ nav ul li a:focus{
 }
 .modalKu h1{
     color: black;
-    margin-bottom: 30px;
 }
 .modal{
     display: flex;
@@ -896,7 +895,7 @@ body.darkBody{
         font-size: 30pt;
     }
     .modal-content{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         width: 250px;
         padding-bottom:5px;
     }
@@ -917,6 +916,9 @@ body.darkBody{
     }
     .contact table td{
         font-size: 10pt;
+    }
+    .form-modal{
+        width: 200px;
     }
 }
 
