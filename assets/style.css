@@ -918,10 +918,15 @@ body.darkBody{
         font-size: 10pt;
     }
     .Modal{
-        padding: 0 15px;
+        margin: auto;
+        padding: 15px;
+        box-sizing: border-box;
     }
     .form-modal{
-        width: 90%;
+        width: 100%;
+    }
+    .form-control{
+        padding: 10px;
     }
 }
 
