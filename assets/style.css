@@ -917,8 +917,11 @@ body.darkBody{
     .contact table td{
         font-size: 10pt;
     }
+    .Modal{
+        padding: 0 15px;
+    }
     .form-modal{
-        width: 200px;
+        width: auto;
     }
 }
 
