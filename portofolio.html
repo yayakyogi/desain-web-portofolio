@@ -61,6 +61,15 @@
                            <a href="#"onclick="openSistemInformasi()">Lihat</a>
                         </div>
                     </div>
+                    <div class="isi-list-project">
+                        <img src="assets/img/img-android-dev.png" alt="img-android">
+                        <div class="caption-project">
+                            <div class="line"></div>
+                            <h2>Aplikasi Android</h2>
+                            <span>React Native</span>
+                           <a href="#"onclick="openAplikasiAndroid()">Lihat</a>
+                        </div>
+                    </div>
                     <!-- <img src="assets/img/portofolio/web-portofolioo-1.png" alt="web-portofolio">
                     <img src="assets/img/portofolio/web-media-pemebelajaran.png" alt="web-media-pemebelajaran"> -->
                 </div>
@@ -131,6 +140,18 @@
         </div>
         <button class="close" onclick="closeSistemInformasi()">&times;</button>
     </div>
+
+    <!-- APLIKASI ANDROID -->
+    <div class="modalKu" id="aplikasi-android">
+        <h1>Comming soon</h1>
+        <div class="modal">
+            <div class="modal-content">
+                <img src="assets/img/img-android.png" alt="php-naive-bayes-1">
+                <p>Comming soon</p>
+            </div>
+        </div>
+        <button class="close" onclick="closeAplikasiAndroid()">&times;</button>
+    </div>
 </body>
 <script src="assets/script.js"></script>
 <script>
@@ -177,6 +198,7 @@
     const desainWeb = document.getElementById('desain-web');
     const aplikasiDekstop = document.getElementById('aplikasi-dekstop');
     const sistemInformasi = document.getElementById('sistem-informasi');
+    const aplikasiAndroid = document.getElementById('aplikasi-android');
     const modalKu = document.querySelector('.modalKu');
     // Modal desain web
     function openDesainweb(){desainWeb.style.display="block";}
@@ -187,5 +209,8 @@
     // Modal sistem informasi
     function openSistemInformasi(){sistemInformasi.style.display="block"; }
     function closeSistemInformasi(){sistemInformasi.style.display="none";}
+    // Modal aplikasi android
+    function openAplikasiAndroid(){aplikasiAndroid.style.display="block"; }
+    function closeAplikasiAndroid(){aplikasiAndroid.style.display="none";}
 </script>
 </html>
