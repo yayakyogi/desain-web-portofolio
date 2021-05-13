@@ -1,4 +1,4 @@
 # Desain Web Portofoio
 Desan web portofolio saya, dibuat dengan HTML dan CSS
 
-demo : https://kulikode.netlify.app/
+demo : https://ginantakacode.netlify.app/
