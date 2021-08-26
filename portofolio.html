@@ -1,216 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0"">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    maximum-scale=1.0, user-scalable=0"">
     <title>KuliKode</title>
-    <link rel="icon" href="assets/icons/logoutama.png">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+    <link rel="icon" href="assets/icons/logoutama.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
     <nav>
-        <div class="navbar-brand">
-            <a href="index.html">KuliKode</a>
-            <button id="button">
-                <span></span>
-                <!-- <span class="span-b"></span> -->
-            </button>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skill</a></li>
-            <li><a href="portofolio.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="menu-toggle">
-            <input type="checkbox"/>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="navbar-brand">
+        <a href="index.html">KuliKode</a>
+        <button id="button">
+          <span></span>
+          <!-- <span class="span-b"></span> -->
+        </button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skill</a></li>
+        <li><a href="portofolio.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <div class="container">
-        <div class="portofolio">
-           <div class="portoflio-content">
-                <h1>My Projects</h1>
-                <div class="list-project">
-                    <div class="isi-list-project">
-                        <img src="assets/img/portofolio/web-design.svg" alt="web-design">
-                        <div class="caption-project">
-                            <div class="line"></div>
-                            <h2>Desain Web</h2>
-                            <span>html,css,javascript</span>
-                           <a href="#" onclick="openDesainweb()">Lihat</a>
-                        </div>
-                    </div>
-                    <div class="isi-list-project">
-                        <img src="assets/img/portofolio/dekstop-app.svg" alt="dekstop-app">
-                        <div class="caption-project">
-                            <div class="line"></div>
-                            <h2>Aplikasi Dekstop</h2>
-                            <span>C#</span>
-                           <a href="#"onclick="openAplikasiDesktop()">Lihat</a>
-                        </div>
-                    </div>
-                    <div class="isi-list-project">
-                        <img src="assets/img/portofolio/web-developer.svg" alt="web-developer">
-                        <div class="caption-project">
-                            <div class="line"></div>
-                            <h2>Sistem Informasi</h2>
-                            <span>PHP,CodeIgniter,Laravel</span>
-                           <a href="#"onclick="openSistemInformasi()">Lihat</a>
-                        </div>
-                    </div>
-                    <div class="isi-list-project">
-                        <img src="assets/img/img-android-dev.png" alt="img-android">
-                        <div class="caption-project">
-                            <div class="line"></div>
-                            <h2>Aplikasi Android</h2>
-                            <span>React Native</span>
-                           <a href="#"onclick="openAplikasiAndroid()">Lihat</a>
-                        </div>
-                    </div>
-                    <!-- <img src="assets/img/portofolio/web-portofolioo-1.png" alt="web-portofolio">
-                    <img src="assets/img/portofolio/web-media-pemebelajaran.png" alt="web-media-pemebelajaran"> -->
-                </div>
+      <div class="portofolio">
+        <div class="portoflio-content">
+          <h1>My Projects</h1>
+          <div class="list-project">
+            <div class="isi-list-project">
+              <img
+                src="assets/img/portofolio/web-design.svg"
+                alt="web-design"
+              />
+              <div class="caption-project">
+                <div class="line"></div>
+                <h2>Desain Web</h2>
+                <span>html,css,javascript</span>
+                <a href="#" onclick="openDesainweb()">Lihat</a>
+              </div>
             </div>
-            <hr>
+            <div class="isi-list-project">
+              <img
+                src="assets/img/portofolio/dekstop-app.svg"
+                alt="dekstop-app"
+              />
+              <div class="caption-project">
+                <div class="line"></div>
+                <h2>Aplikasi Dekstop</h2>
+                <span>C#</span>
+                <a href="#" onclick="openAplikasiDesktop()">Lihat</a>
+              </div>
+            </div>
+            <div class="isi-list-project">
+              <img
+                src="assets/img/portofolio/web-developer.svg"
+                alt="web-developer"
+              />
+              <div class="caption-project">
+                <div class="line"></div>
+                <h2>Sistem Informasi</h2>
+                <span>PHP,CodeIgniter,Laravel</span>
+                <a href="#" onclick="openSistemInformasi()">Lihat</a>
+              </div>
+            </div>
+            <div class="isi-list-project">
+              <img src="assets/img/img-android-dev.png" alt="img-android" />
+              <div class="caption-project">
+                <div class="line"></div>
+                <h2>Aplikasi Android</h2>
+                <span>React Native</span>
+                <a href="#" onclick="openAplikasiAndroid()">Lihat</a>
+              </div>
+            </div>
+            <!-- <img src="assets/img/portofolio/web-portofolioo-1.png" alt="web-portofolio">
+                    <img src="assets/img/portofolio/web-media-pemebelajaran.png" alt="web-media-pemebelajaran"> -->
+          </div>
         </div>
+        <hr />
+      </div>
     </div>
-    <div class="footer">
-        Made by <span>&hearts;</span> yayakyogi
-    </div>
+    <div class="footer">Made by <span>&hearts;</span> yayakyogi</div>
 
     <!-- WEB DESAIN -->
     <div class="modalKu" id="desain-web">
-        <h1>DESAIN WEB</h1>
-        <div class="modal">
-            <div class="modal-content">
-                <img src="assets/img/portofolio/web-media-pemebelajaran.png" alt="web-media-pemebelajaran">
-                <p>Desain Web Landing Page</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/web-profil.png" alt="web-profil">
-                <p>Desain Web Landing Page Perusahaan</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/web-portofolioo-1.png" alt="web-media-pemebelajaran">
-                <p>Desain Web Portofolio</p>
-            </div>
+      <h1>DESAIN WEB</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/web-media-pemebelajaran.png"
+            alt="web-media-pemebelajaran"
+          />
+          <p>Desain Web Landing Page</p>
         </div>
-        <button class="close" onclick="closeDesainweb()">&times;</button>
+        <div class="modal-content">
+          <img src="assets/img/portofolio/web-profil.png" alt="web-profil" />
+          <p>Desain Web Landing Page Perusahaan</p>
+        </div>
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/web-portofolioo-1.png"
+            alt="web-media-pemebelajaran"
+          />
+          <p>Desain Web Portofolio</p>
+        </div>
+      </div>
+      <button class="close" onclick="closeDesainweb()">&times;</button>
     </div>
 
     <!-- APLIKASI DEKSTOP -->
     <div class="modalKu" id="aplikasi-dekstop">
-        <h1>APLIKASI DEKSTOP</h1>
-        <div class="modal">
-            <div class="modal-content">
-                <img src="assets/img/portofolio/csharp-aplikasi-kasir-warteg-1.png" alt="csharp-aplikasi-kasir-warteg-1">
-                <p>Aplikasi Kasir</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/csharp-aplikasi-pesan-makanan-1.png" alt="csharp-aplikasi-pesan-makanan-1">
-                <p>Aplikasi Pesan Makanan</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/csharp-struktur-organisai-sekolah-1.png" alt="csharp-struktur-organisai-sekolah-1">
-                <p>Aplikasi Struktur Organisai Sekolah</p>
-            </div>
+      <h1>APLIKASI DEKSTOP</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/csharp-aplikasi-kasir-warteg-1.png"
+            alt="csharp-aplikasi-kasir-warteg-1"
+          />
+          <p>Aplikasi Kasir</p>
         </div>
-        <button class="close" onclick="closeAplikasiDekstop()">&times;</button>
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/csharp-aplikasi-pesan-makanan-1.png"
+            alt="csharp-aplikasi-pesan-makanan-1"
+          />
+          <p>Aplikasi Pesan Makanan</p>
+        </div>
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/csharp-struktur-organisai-sekolah-1.png"
+            alt="csharp-struktur-organisai-sekolah-1"
+          />
+          <p>Aplikasi Struktur Organisai Sekolah</p>
+        </div>
+      </div>
+      <button class="close" onclick="closeAplikasiDekstop()">&times;</button>
     </div>
 
     <!-- SISTEM INFROMASI -->
     <div class="modalKu" id="sistem-informasi">
-        <h1>SISTEM INFORMASI</h1>
-        <div class="modal">
-            <div class="modal-content">
-                <img src="assets/img/portofolio/php-naive-bayes-1.png" alt="php-naive-bayes-1">
-                <p>Penerapan Algoritma Naive Bayes untuk mencari kelulusan mahasiswa</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/ci-crud-media-pembelajaran.png" alt="ci-crud-media-pembelajaran">
-                <p>Media Pembelajaran</p>
-            </div>
-            <div class="modal-content">
-                <img src="assets/img/portofolio/laravel-sistem-pengumpulan-materi-1.png" alt="laravel-sistem-pengumpulan-materi-1">
-                <p>Sistem Pengumpulan Tugas</p>
-            </div>
+      <h1>SISTEM INFORMASI</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/php-naive-bayes-1.png"
+            alt="php-naive-bayes-1"
+          />
+          <p>
+            Penerapan Algoritma Naive Bayes untuk mencari kelulusan mahasiswa
+          </p>
         </div>
-        <button class="close" onclick="closeSistemInformasi()">&times;</button>
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/ci-crud-media-pembelajaran.png"
+            alt="ci-crud-media-pembelajaran"
+          />
+          <p>Media Pembelajaran</p>
+        </div>
+        <div class="modal-content">
+          <img
+            src="assets/img/portofolio/laravel-sistem-pengumpulan-materi-1.png"
+            alt="laravel-sistem-pengumpulan-materi-1"
+          />
+          <p>Sistem Pengumpulan Tugas</p>
+        </div>
+      </div>
+      <button class="close" onclick="closeSistemInformasi()">&times;</button>
     </div>
 
     <!-- APLIKASI ANDROID -->
     <div class="modalKu" id="aplikasi-android">
-        <h1>Comming soon</h1>
-        <div class="modal">
-            <div class="modal-content">
-                <img src="assets/img/img-android.png" alt="php-naive-bayes-1">
-                <p>GoUTama</p>
-            </div>
+      <h1>Comming soon</h1>
+      <div class="modal">
+        <div class="modal-content">
+          <img src="assets/img/img-android.png" alt="php-naive-bayes-1" />
         </div>
-        <button class="close" onclick="closeAplikasiAndroid()">&times;</button>
+      </div>
+      <button class="close" onclick="closeAplikasiAndroid()">&times;</button>
     </div>
-</body>
-<script src="assets/script.js"></script>
-<script>
+  </body>
+  <script src="assets/script.js"></script>
+  <script>
     // // Dark mode
     const button = document.getElementById("button");
 
     const body = document.querySelector("body");
     const span = document.querySelector(".navbar-brand button span");
     const navbarBrand = document.querySelector(".navbar-brand a");
-    const h1 = document.querySelectorAll('h1');
-    const p = document.querySelectorAll('p');
-    const img = document.querySelectorAll('img');
-    const menuToggle = document.querySelector('.menu-toggle input');
-    const navbar = document.querySelector('nav ul');
-    const darkHumberger = document.querySelectorAll('.menu-toggle span');
-    const listProject = document.querySelectorAll('.isi-list-project');
+    const h1 = document.querySelectorAll("h1");
+    const p = document.querySelectorAll("p");
+    const img = document.querySelectorAll("img");
+    const menuToggle = document.querySelector(".menu-toggle input");
+    const navbar = document.querySelector("nav ul");
+    const darkHumberger = document.querySelectorAll(".menu-toggle span");
+    const listProject = document.querySelectorAll(".isi-list-project");
 
-    button.addEventListener("click", function(){
-        body.classList.toggle('darkBody');
-        span.classList.toggle('darkSpan');
-        navbarBrand.classList.toggle('darkNavbarBrand');
-       for(let i=0; i<h1.length; i++){
-            h1[i].classList.toggle("darkPortofolioContent");
-        }
-        for(let i=0; i<p.length; i++){
-            p[i].classList.toggle("darkPortofolioContent");
-        }
-        for(let i=0; i<img.length; i++){
-            img[i].classList.toggle('darkimg');
-        }
-        for(let i=0; i<darkHumberger.length; i++){
-            darkHumberger[i].classList.toggle("darkHumberger")
-        }
-        for(let i=0; i<listProject.length; i++){
-            listProject[i].classList.toggle('darkList');
-        }
+    button.addEventListener("click", function () {
+      body.classList.toggle("darkBody");
+      span.classList.toggle("darkSpan");
+      navbarBrand.classList.toggle("darkNavbarBrand");
+      for (let i = 0; i < h1.length; i++) {
+        h1[i].classList.toggle("darkPortofolioContent");
+      }
+      for (let i = 0; i < p.length; i++) {
+        p[i].classList.toggle("darkPortofolioContent");
+      }
+      for (let i = 0; i < img.length; i++) {
+        img[i].classList.toggle("darkimg");
+      }
+      for (let i = 0; i < darkHumberger.length; i++) {
+        darkHumberger[i].classList.toggle("darkHumberger");
+      }
+      for (let i = 0; i < listProject.length; i++) {
+        listProject[i].classList.toggle("darkList");
+      }
     });
     // Munculkan sidebar
-    menuToggle.addEventListener('click',function(){
-        navbar.classList.toggle('slide');
+    menuToggle.addEventListener("click", function () {
+      navbar.classList.toggle("slide");
     });
 
     // Modal
-    const desainWeb = document.getElementById('desain-web');
-    const aplikasiDekstop = document.getElementById('aplikasi-dekstop');
-    const sistemInformasi = document.getElementById('sistem-informasi');
-    const aplikasiAndroid = document.getElementById('aplikasi-android');
-    const modalKu = document.querySelector('.modalKu');
+    const desainWeb = document.getElementById("desain-web");
+    const aplikasiDekstop = document.getElementById("aplikasi-dekstop");
+    const sistemInformasi = document.getElementById("sistem-informasi");
+    const aplikasiAndroid = document.getElementById("aplikasi-android");
+    const modalKu = document.querySelector(".modalKu");
     // Modal desain web
-    function openDesainweb(){desainWeb.style.display="block";}
-    function closeDesainweb(){desainWeb.style.display="none";}
+    function openDesainweb() {
+      desainWeb.style.display = "block";
+    }
+    function closeDesainweb() {
+      desainWeb.style.display = "none";
+    }
     // Modal aplikasi dekstop
-    function openAplikasiDesktop(){aplikasiDekstop.style.display="block";}
-    function closeAplikasiDekstop(){aplikasiDekstop.style.display="none";}
+    function openAplikasiDesktop() {
+      aplikasiDekstop.style.display = "block";
+    }
+    function closeAplikasiDekstop() {
+      aplikasiDekstop.style.display = "none";
+    }
     // Modal sistem informasi
-    function openSistemInformasi(){sistemInformasi.style.display="block"; }
-    function closeSistemInformasi(){sistemInformasi.style.display="none";}
+    function openSistemInformasi() {
+      sistemInformasi.style.display = "block";
+    }
+    function closeSistemInformasi() {
+      sistemInformasi.style.display = "none";
+    }
     // Modal aplikasi android
-    function openAplikasiAndroid(){aplikasiAndroid.style.display="block"; }
-    function closeAplikasiAndroid(){aplikasiAndroid.style.display="none";}
-</script>
+    function openAplikasiAndroid() {
+      aplikasiAndroid.style.display = "block";
+    }
+    function closeAplikasiAndroid() {
+      aplikasiAndroid.style.display = "none";
+    }
+  </script>
 </html>
